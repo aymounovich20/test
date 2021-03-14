@@ -1,6 +1,187 @@
-body{
-    background-color: rgb(251, 255, 0);
-}
-h1{
-    background-color: blueviolet;
-}
+body {
+    font-family: 'Denk One', sans-serif;
+  }
+  
+  #owl-captions .item img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  #owl-team .item {
+    margin: 5px;
+  }
+  
+  #owl-team .item img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  #test1,
+  #test2,
+  #test3 {
+    position: fixed;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    top: 75%;
+    left: 50%;
+    margin-top: -25px;
+    /* Negative half of height. */
+    margin-left: -100px;
+    /* Negative half of width. */
+  }
+  
+  #team1,
+  #team2,
+  #team3,
+  #team4,
+  #team5 {
+    position: relative;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    left: 50%;
+    margin-top: -25px;
+    /* Negative half of height. */
+    margin-left: -100px;
+    /* Negative half of width. */
+  }
+  
+  #owl-team .item .frame {
+    width: 108px;
+    height: 108px;
+    border: 2px solid grey;
+    border-radius: 108px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  #owl-team .item .frame img {
+    width: 90px;
+    height: 90px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+  }
+  
+  .btn {
+    background-color: grey;
+    border: grey;
+  }
+  
+  .nav>li>a {
+    display: inline-block;
+  }
+  
+  li>a {
+    font-weight: 800;
+    font-size: 1.5em;
+    display: inline;
+  }
+  
+  .navbar-default {
+    background-color: white;
+    border-color: white;
+  }
+  
+  #about.row {
+    background-color: white
+  }
+  
+  .anchor {
+    display: block;
+    position: relative;
+    top: -50px;
+    visibility: hidden;
+  }
+  
+  #quotetext {
+    font-size: 1.4em;
+    font-weight: 600;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    position: absolute;
+    text-align: center;
+    width: 400px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    /* Negative half of height. */
+    margin-left: -200px;
+    /* Negative half of width. */
+  }
+  
+  #quote {
+    background: -webkit-image-set( url('http://placehold.it/1600x900') 1x, url('http://placehold.it/3200x1800') 2x);
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  #contact {
+    background: -webkit-image-set( url('http://placehold.it/1600x900') 1x, url('http://placehold.it/3200x1800') 2x);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  #contactForm {
+    padding: 10px;
+    opacity: 0.8;
+    background: -webkit-linear-gradient(white, transparent, white);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(white, transparent, white);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(white, transparent, white);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(white, transparent, white);
+    /* Standard syntax (must be last) */
+  }
+  
+  .mycol {
+    width: contain;
+  }
+  
+  html,
+  body {
+    height: 100%;
+  }
+  
+  #wrap {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -30px;
+  }
+  
+  #push,
+  #footer {
+    height: 30px;
+  }
+  
+  #footer {
+    background-color: transparent;
+    text-align: center;
+  }
+  
+  @media (max-width: 767px) {
+    #footer {
+      
+    }
+    #quotetext {
+      width: 300px;
+      height: 100px;
+      top: 50%;
+      left: 50%;
+      margin-top: -50px;
+      /* Negative half of height. */
+      margin-left: -150px;
+      /* Negative half of width. */
+    }
+  }
