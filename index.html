@@ -1,13 +1,196 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+<!-- <!DOCTYPE html> -->
+<html>
+  <head>
+    <title>Basic ajax request using node, express, and jQuery.</title>
+    <link id="favicon" rel="icon" href="https://hyperdev.com/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="app.css"></head>
-<body>
-    <h1>GIT DEMO PAGE</h1>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Denk+One" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="app.css">
+  </head>
+  
+  <body>
+
+  <div id="wrap">
+
+    <nav class="navbar navbar-default navbar-fixed-top" id="nav">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+          <div class="navbar-brand" href="#">LOGO GOES HERE</div>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#slider">Start</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#teamSpacing">Team</a></li>
+            <li><a href="#contactSpacing">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <div class="container">
+
+      <div class="anchor" id="slider"></div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <div id="owl-captions" class="owl-carousel owl-theme">
+            <div class="item"><img src="https://placehold.it/800x450" srcset="https://placehold.it/1600x900 1x, https://placehold.it/3200x1800 2x" class="img-responsive" alt="test1">
+              <div id="test1">
+                <h2>test caption1</h2></div>
+            </div>
+            <div class="item"><img src="https://placehold.it/1600x900" srcset="https://placehold.it/1600x900 1x, https://placehold.it/3200x1800 2x" class="img-responsive" alt="test2">
+              <div id="test2">
+                <h2>test caption2</h2></div>
+            </div>
+            <div class="item"><img src="https://placehold.it/1600x900" srcset="https://placehold.it/1600x900 1x, https://placehold.it/3200x1800 2x" class="img-responsive" alt="test3">
+              <div id="test3">
+                <h2>test caption3</h2></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="about" class="anchor"></div>
+      <div class="row">
+        <div class="col-xs-10 col-sm-5  col-md-4  col-lg-4 col-xs-offset-1  col-sm-offset-1 col-md-offset-2 col-lg-offset-2">
+          <img src="https://placehold.it/1200x600" srcset="https://placehold.it/1200x600 1x, https://placehold.it/2400x1200 2x" alt="about pasta" class="img-responsive">
+        </div>
+        <div class="col-xs-10 col-sm-5  col-md-4  col-lg-4 col-xs-offset-1 col-sm-offset-0  col-md-offset-0 col-lg-offset-0">
+          <p class="text-justify">Pasta ipsum dolor sit amet bucatini timpano croxetti bavette pici sacchettoni mezzelune sagne 'ncannulate tortelloni lanterne. Agnolotti chifferi paccheri lanterne mafaldine casarecce vermicelli acini di pepe maltagliati. Rotelle lanterne maltagliati
+            casarecce sagnarelli lasagne pizzoccheri tortiglioni ravioli pizzoccheri sagne 'ncannulate fusilli fettuce. </p>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="row">
+        <div class="image col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <div id="quote">
+
+            <p id="quotetext">The problem is not the problem. The problem is your attitude about the problem.<br> - Captain Jack Sparrow</p>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="anchor" id="teamSpacing"></div>
+      <div class="row" id="team">
+        <br>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <div id="owl-team" class="owl-carousel owl-theme">
+            <div class="item">
+              <div class="frame"><img src="https://placehold.it/1000x1000" alt="team1"></div><br>
+              <div id="team1">
+                <h4>Captain America</h4>
+                <p>the boss</p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="frame"><img src="https://placehold.it/1000x1000" alt="team2"></div><br>
+              <div id="team2">
+                <h4>Winter Soldier</h4>
+                <p>his deputy</p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="frame"><img src="https://placehold.it/1000x1000" alt="team3"></div><br>
+              <div id="team3">
+                <h4>Spiderman</h4>
+                <p>the meme</p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="frame"><img src="https://placehold.it/1000x1000" alt="team4"></div><br>
+              <div id="team4">
+                <h4>Thor</h4>
+                <p>grunt #1</p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="frame"><img src="https://placehold.it/1000x1000" alt="team5"></div><br>
+              <div id="team5">
+                <h4>Hulk</h4>
+                <p>grunt #2</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+      </div>
+
+
+      <div class="anchor" id="contactSpacing"></div>
+
+      <div class="row">
+        <div class=" col-xs-12  col-sm-12 col-md-12 col-lg-12">
+          <div id="contact">
+            <div class="row">
+              <br>
+              <div class="col-xs-10 col-sm-10 col-md-8  col-lg-8 col-xs-offset-1  col-sm-offset-1 col-md-offset-2 col-lg-offset-2">
+
+                <form class="form-horizontal" role="form" id="contactForm">
+                  <div class="form-group">
+                    <label for="name" class="col-sm-2 control-label">Name</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control required" id="name" name="name" placeholder="First & Last Name" value="" required>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="email" class="col-sm-2 control-label">Email</label>
+                    <div class="col-sm-10">
+                      <input type="email" class="form-control required" id="email" name="email" placeholder="example@domain.com" value="" required>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="message" class="col-sm-2 control-label">Message</label>
+                    <div class="col-sm-10">
+                      <textarea class="form-control" rows="4" id="message" name="message" required></textarea>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-10 col-sm-offset-2">
+                      <input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
+                    </div>
+                  </div>
+                </form>
+                <div id="alert"></div>
+                <br>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+
+
+      <div id="push"></div>
+    </div>
+
+    <div id="footer">
+      <div class="container">
+        <p>By <a href="https://krzysztofradomski.github.io/">Krzysztof Radomski</a> for <a href="http://">XXXXXX</a>. All rights reserved.</p>
+      </div>
+    </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="app.js"></script>
-</body>
+
+
+  </body>
 </html>
